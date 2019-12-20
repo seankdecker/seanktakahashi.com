@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c184bed082ff634d1c27805bc71f5009",
+    "revision": "fec00d367291df53e422a8076bd1268f",
     "url": "/seanktakahashi.com/index.html"
   },
   {
-    "revision": "b3bdce67806b917a1270",
-    "url": "/seanktakahashi.com/static/css/main.154902dd.chunk.css"
+    "revision": "45925639a86e8dad56b5",
+    "url": "/seanktakahashi.com/static/css/main.0b5d93ae.chunk.css"
   },
   {
     "revision": "5f9c0c50b60289499b61",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/seanktakahashi.com/static/js/2.f9851a25.chunk.js.LICENSE"
   },
   {
-    "revision": "b3bdce67806b917a1270",
+    "revision": "45925639a86e8dad56b5",
     "url": "/seanktakahashi.com/static/js/main.faab9f01.chunk.js"
   },
   {
