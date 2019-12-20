@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/seanktakahashi.com/static/css/main.154902dd.chunk.css",
+    "main.js": "/seanktakahashi.com/static/js/main.6fac821b.chunk.js",
+    "main.js.map": "/seanktakahashi.com/static/js/main.6fac821b.chunk.js.map",
+    "runtime-main.js": "/seanktakahashi.com/static/js/runtime-main.97f67963.js",
+    "runtime-main.js.map": "/seanktakahashi.com/static/js/runtime-main.97f67963.js.map",
+    "static/js/2.b918e878.chunk.js": "/seanktakahashi.com/static/js/2.b918e878.chunk.js",
+    "static/js/2.b918e878.chunk.js.map": "/seanktakahashi.com/static/js/2.b918e878.chunk.js.map",
+    "index.html": "/seanktakahashi.com/index.html",
+    "precache-manifest.6d37b234ace316e4518d4e63b55aad94.js": "/seanktakahashi.com/precache-manifest.6d37b234ace316e4518d4e63b55aad94.js",
+    "service-worker.js": "/seanktakahashi.com/service-worker.js",
+    "static/css/main.154902dd.chunk.css.map": "/seanktakahashi.com/static/css/main.154902dd.chunk.css.map",
+    "static/js/2.b918e878.chunk.js.LICENSE": "/seanktakahashi.com/static/js/2.b918e878.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97f67963.js",
+    "static/js/2.b918e878.chunk.js",
+    "static/css/main.154902dd.chunk.css",
+    "static/js/main.6fac821b.chunk.js"
+  ]
+}
