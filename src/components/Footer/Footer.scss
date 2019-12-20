@@ -1,0 +1,22 @@
+@import "styles/variables";
+
+#footer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5em; width: 100%;
+  &::after {
+    content: ' ';
+    position: absolute;
+    background-color: black;
+    z-index: 0;
+    height: 5em; width: 100%;
+  }
+}
+
+.footer-elem {
+  margin: auto 2vh auto 2vh;
+  color: white;
+  text-decoration: none;
+  vertical-align: center;
+  z-index: 2;
+}

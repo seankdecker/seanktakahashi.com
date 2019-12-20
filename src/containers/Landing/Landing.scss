@@ -1,0 +1,58 @@
+@import "styles/variables";
+
+#landing-container {
+  overflow: hidden;
+  // background-color: black;
+}
+
+#landing-container::after {
+  content: ' ';
+  display: block;
+  position: fixed;
+  z-index: 1;
+  opacity: 0.8;
+  /* cover entire screen */
+  left: 0;      top: 0;
+  height: 100%; width: 100%;
+  /* flower background image */
+  background-image: $gas-station-img;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: black;
+  background-attachment: fixed;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#landing-container h3 {
+  padding: 50px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+} 
+
+#landing-container .content-tab {
+  margin: 1em;
+  padding: 50px;
+  text-align: center;  
+  color: #fff;
+  h1 {
+    position: relative;
+    z-index: 2;
+    background-color: black;
+  }
+  &::after {
+    content: ' ';
+    display: block;
+    position: relative;
+    background-color: black;
+    z-index: 0;
+    /* cover upper banner area */
+    left: -1em;      top: -1em;
+    height: 5em; width: 100%;
+  }
+} 

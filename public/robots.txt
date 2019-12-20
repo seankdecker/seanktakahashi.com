@@ -1,2 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
+# I don't want no robots sniffing around here
 User-agent: *
+Disallow: /
