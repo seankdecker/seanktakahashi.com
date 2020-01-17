@@ -8,12 +8,9 @@
   left: 0;      top: 0;
   height: 5em; width: 100%;
   &::after {
-    content: ' ';
-    display: block;
-    position: absolute;
-    background-color: black;
-    z-index: 0;
+    @include black-background-square();
     /* cover upper banner area */
+    position: absolute;
     left: 0;      top: 0;
     height: 5em; width: 100%;
   }

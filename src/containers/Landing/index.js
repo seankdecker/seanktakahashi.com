@@ -3,33 +3,40 @@ import {Link} from 'react-router-dom';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import './Landing.scss';
-
-const elems = [];
+import {SIDE_PAGES, SPACE_HOLDER} from 'constants.js';
 
 export default class Landing extends Component {
   constructor(props) {
     super(props);
   }
 
-  buildTabs = () => {
+  buildContent = () => {
     let res = [];
-    for (let i = 0; i < elems.length; i++) {
+    // build div for each side page
+    for (let i = 0; i < SIDE_PAGES.length; i++) {
+      const subpage_title = SIDE_PAGES[i].replace(SPACE_HOLDER, ' ');
+      const subpage_path = '/' + SIDE_PAGES[i];
       res.push(
         <div className='content-tab'>
-          <h1>{elems[i]}</h1>
+          <Link to={subpage_path}>
+            <h1>{subpage_title}</h1>
+          </Link>
         </div>
       );
     }
-    return res;
+    return (
+      <div id='content-container'>
+        {res}
+      </div>
+    );
   }
 
   render() {
     return (
       <Fragment>
         <Header />
-        <div id='landing-container'>          
-          {this.buildTabs()}     
-          <h3 style={{fontSize: 60}}>{'UNDER CONSTRUCTION'}</h3>
+        <div id='landing-container'>         
+          {this.buildContent()}
         </div>
         <Footer />
       </Fragment>

@@ -3,6 +3,7 @@
 
 // color constants
 $theme-color: #852722;
+$base-panel-color: #000000;
 $font-color: #e0e0e0;
 
 // various fun images
@@ -14,5 +15,16 @@ $beach-img: url('/assets/beach.jpg');
 $trees-img: url('/assets/trees.jpg');
 $shore-img: url('/assets/shore.jpg');
 
+// z-indicies
+$base-panel-layer: 0;
+$background-image-layer: 1;
+$content-layer: 2;
+
+@mixin black-background-square() {
+  content: ' ';
+  display: block;
+  background-color: $base-panel-color;
+  z-index: $base-panel-layer;
+}
 // font constants
 $theme-font: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;

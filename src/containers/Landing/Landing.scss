@@ -2,14 +2,13 @@
 
 #landing-container {
   overflow: hidden;
-  // background-color: black;
 }
 
 #landing-container::after {
   content: ' ';
   display: block;
   position: fixed;
-  z-index: 1;
+  z-index: $background-image-layer;
   opacity: 0.8;
   /* cover entire screen */
   left: 0;      top: 0;
@@ -27,32 +26,25 @@
   background-size: cover;
 }
 
-#landing-container h3 {
-  padding: 50px;
-  text-align: center;
-  z-index: 2;
-  position: relative;
-  color: #fff;
-} 
+#content-container {
+  display: flex;
+}
 
-#landing-container .content-tab {
+#content-container .content-tab {
   margin: 1em;
   padding: 50px;
-  text-align: center;  
-  color: #fff;
+  text-align: center;
+  color: $font-color;
   h1 {
     position: relative;
-    z-index: 2;
-    background-color: black;
+    z-index: $content-layer;
+    margin: 1em;
   }
   &::after {
-    content: ' ';
-    display: block;
+    @include black-background-square();
+    /* cover back of content tab */
     position: relative;
-    background-color: black;
-    z-index: 0;
-    /* cover upper banner area */
-    left: -1em;      top: -1em;
+    top: -5.5em;
     height: 5em; width: 100%;
   }
 } 
