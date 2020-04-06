@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import './Landing.scss';
-import {SIDE_PAGES, SPACE_HOLDER} from 'constants.js';
+import {SIDE_PAGES, SPACE_HOLDER} from 'constants.tsx';
 
 export default class Landing extends Component {
   constructor(props) {
